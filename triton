@@ -1,0 +1,10 @@
+out_to_console yes
+out_to_x no
+background no
+update_interval 2
+total_run_times 0
+use_spacer none
+
+TEXT
+$mpd_smart :: ESPN ~ ${scroll 45 12 ${execi 3600 python2 ./.sport_hl.py | fold}} ~ :: ${battery BAT1} :: ${cpu cpu1}% / ${cpu cpu2}%  ${loadavg 1} ${loadavg 2 3} :: ${acpitemp}c :: $memperc% ($mem) :: ${downspeed eth0}K/s ${upspeed eth0}K/s :: ${time %a %b %d %I:%M%P}
+
