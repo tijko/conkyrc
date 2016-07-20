@@ -1,0 +1,10 @@
+out_to_console yes
+out_to_x no
+background no
+update_interval 2
+total_run_times 0
+use_spacer none
+
+
+TEXT
+${battery BAT1} [NET: ${upspeed wlp6s0}${downspeed wlp6s0}][I/0: ${diskio /dev/sda1}][CPU: ${cpu cpu1}% ${cpu cpu2}% ${cpu cpu3}% ${cpu cpu4}%] ${loadavg 1} ${loadavg 2 3} :: $memperc% ($mem) :: ${time %a %b %d %I:%M%P}
